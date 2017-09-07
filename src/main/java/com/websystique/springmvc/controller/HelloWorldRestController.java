@@ -32,6 +32,11 @@ public class HelloWorldRestController {
         }
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
+    
+    @RequestMapping(value="/testing/", method = RequestMethod.GET)
+    public String getTest() {
+    	return "working";
+    }
  
      
     //-------------------Retrieve All Users--------------------------------------------------------
