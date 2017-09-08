@@ -35,7 +35,7 @@ public class HelloWorldRestController {
     
     @RequestMapping(value="/testing/", method = RequestMethod.GET)
     public String getTest() {
-    	return "working";
+    	return "works like charm";
     }
  
      
