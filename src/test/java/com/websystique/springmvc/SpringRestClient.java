@@ -14,8 +14,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 
-import com.websystique.springmvc.model.AuthTokenInfo;
-import com.websystique.springmvc.model.User;
+import com.mcrm.springmvc.model.AuthTokenInfo;
+import com.mcrm.springmvc.model.User;
  
 public class SpringRestClient {
  

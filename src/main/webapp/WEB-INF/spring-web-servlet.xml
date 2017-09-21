@@ -18,7 +18,7 @@
         http://www.springframework.org/schema/util/spring-util-3.1.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
 
-   <context:component-scan base-package = "com.websystique.springmvc" />
+   <context:component-scan base-package = "com.mcrm.springmvc" />
 	<mvc:annotation-driven />
    <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
       <property name = "prefix" value = "/WEB-INF/jsp/" />
@@ -52,7 +52,7 @@
 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="com.websystique.springmvc.model"></property>
+		<property name="packagesToScan" value="com.mcrm.springmvc.model"></property>
 	</bean>
 	<!-- Transaction -->
 	
@@ -60,10 +60,10 @@
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	<bean id="userDAO" class="com.websystique.springmvc.dao.UserDaoImpl">
+	<bean id="userDAO" class="com.mcrm.springmvc.dao.UserDaoImpl">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
-    <bean id="userService" class="com.websystique.springmvc.service.UserServiceImpl">
+    <bean id="userService" class="com.mcrm.springmvc.service.UserServiceImpl">
         <property name="userDAO" ref="userDAO"></property>
     </bean>
 <tx:annotation-driven transaction-manager="transactionManager" />

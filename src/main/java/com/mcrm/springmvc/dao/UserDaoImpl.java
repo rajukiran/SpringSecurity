@@ -1,4 +1,4 @@
-package com.websystique.springmvc.dao;
+package com.mcrm.springmvc.dao;
 
 import java.util.List;
 
@@ -7,8 +7,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-
-import com.websystique.springmvc.model.User;
+import com.mcrm.springmvc.model.User;
 public class UserDaoImpl implements UserDao{
 
 	private SessionFactory sessionFactory;

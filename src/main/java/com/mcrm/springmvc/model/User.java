@@ -1,4 +1,4 @@
-package com.websystique.springmvc.model;
+package com.mcrm.springmvc.model;
 
 import java.io.Serializable;
 
@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "users")
+@Table(name = "firms")
 public class User implements Serializable{
 
 	/**

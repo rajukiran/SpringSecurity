@@ -1,10 +1,11 @@
-package com.websystique.springmvc.service;
+package com.mcrm.springmvc.service;
 
 import java.util.Iterator;
 import java.util.List;
 import org.springframework.stereotype.Service;
-import com.websystique.springmvc.dao.UserDao;
-import com.websystique.springmvc.model.User;
+
+import com.mcrm.springmvc.dao.UserDao;
+import com.mcrm.springmvc.model.User;
 
 @Service("userService")
 public class UserServiceImpl implements UserService{

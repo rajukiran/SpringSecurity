@@ -1,4 +1,4 @@
-package com.websystique.springmvc.controller;
+package com.mcrm.springmvc.controller;
  
 import java.util.List;
  
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
- 
-import com.websystique.springmvc.model.User;
-import com.websystique.springmvc.service.UserService;
+
+import com.mcrm.springmvc.model.User;
+import com.mcrm.springmvc.service.UserService;
 
 @RestController
 public class HelloWorldRestController {
@@ -24,7 +24,7 @@ public class HelloWorldRestController {
     @Autowired
     UserService userService;  //Service which will do all data retrieval/manipulation work
     
-    @RequestMapping(value="/test/", method = RequestMethod.GET)
+    @RequestMapping(value="/test/", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<List<User>> getValue() {
     	List<User> users = userService.findAllUsers();
         if(users.isEmpty()){

@@ -1,8 +1,8 @@
-package com.websystique.springmvc.dao;
+package com.mcrm.springmvc.dao;
 
 import java.util.List;
 
-import com.websystique.springmvc.model.User;
+import com.mcrm.springmvc.model.User;
 
 public interface UserDao {
 
